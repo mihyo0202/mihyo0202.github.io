@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio cá nhân — Phạm Đình Minh Hiếu | Sinh viên K70 UET, Điện tử Viễn thông & AI" />
+    <title>Phạm Đình Minh Hiếu — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress"></div>
+    <div class="noise-bg"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <nav class="site-nav" aria-label="Điều hướng chính">
+      <div class="container">
+        <a href="#" class="logo">mihyo<span>.</span>dev</a>
+        <ul class="nav-links">
+          <li><a href="#about">Giới thiệu</a></li>
+          <li><a href="#projects">Dự án</a></li>
+          <li><a href="#reflection">Tổng kết</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="hero" id="top">
+      
+      <!-- BACKGROUND VIDEO 3D (Tự động phát, lặp lại, tắt tiếng) -->
+      <div class="hero-bg" aria-hidden="true">
+        <img src="assets/images/background.png" alt="Hero Background" class="hero-image" />
+      </div>
+      
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <span class="hero-badge">K70 · UET · ĐHQGHN</span>
+        <h1>
+          Xin chào, tôi là<br />
+          <!-- Đã đổi từ gradient-text sang solid-name để chữ nét căng -->
+          <span class="solid-name">Phạm Đình Minh Hiếu</span>
+        </h1>
+        <p class="hero-tagline">
+          Sinh viên ngành Điện tử Viễn thông — đam mê lập trình, AI và xây dựng
+          sản phẩm số. Đang hướng tới mục tiêu du học quốc tế.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">Xem dự án</a>
+          <a href="#about" class="btn btn-ghost">Tìm hiểu thêm</a>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Cuộn xuống">↓ Cuộn xuống</a>
+    </header>
+
+    <section class="about" id="about">
+      <div class="container">
+        <p class="section-label">Giới thiệu</p>
+        <h2 class="section-title">Về tôi</h2>
+
+        <div class="about-grid">
+          <div class="profile-wrap">
+            <div class="profile-ring" aria-hidden="true"></div>
+            <img
+              class="profile-photo"
+              src="assets/images/1000014232.jpg"
+              alt="Ảnh chân dung Phạm Đình Minh Hiếu"
+              onerror="this.hidden=true;document.getElementById('profile-fallback').hidden=false"
+            />
+            <div id="profile-fallback" class="profile-placeholder" hidden>mihyo</div>
+          </div>
+
+          <div class="about-text">
+            <p>
+              Tôi là sinh viên ngành điện tử viễn thông tại
+              <strong>Trường Đại học Công nghệ (UET)</strong>, theo đuổi ước mơ được đi học hỏi, khám phá thế giới. Tôi thích biến ý tưởng thành sản phẩm thực tế — từ quản lý tệp tin, khai thác dữ liệu đến xây dựng ứng dụng hỗ trợ luyện IELTS.
+            </p>
+            <p>
+              Ngoài giờ học, tôi chơi cầu lông, tự nấu ăn và dành thời gian mỗi ngày để củng cố tiếng Anh học thuật. Website này tổng hợp hành trình và các sản phẩm cá nhân trong môn học <strong>Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo</strong> của tôi.
+            </p>
+            <div class="about-meta">
+              <span class="tag">Python</span>
+              <span class="tag">AI &amp; Prompt Engineering</span>
+              <span class="tag">An toàn mạng</span>
+              <span class="tag">Du học ✈️</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="interests">
+          <h3>Sở thích &amp; Định hướng phát triển</h3>
+          <div class="interest-grid">
+            <article class="interest-card glass-card">
+              <div class="interest-visual">
+                <div class="mock-ide" aria-hidden="true">
+                  <div class="bar">
+                    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                    <span style="color:#888;margin-left:6px">euclidean.py — Cursor</span>
+                  </div>
+                  <span class="kw">def</span> <span class="fn">find_gcd</span>(a, b):<br />
+                  &nbsp;&nbsp;<span class="kw">while</span> b != 0:<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;a, b = b, a % b<br />
+                  &nbsp;&nbsp;<span class="kw">return</span> a
+                </div>
+              </div>
+              <div class="interest-body">
+                <h4>Công nghệ &amp; Lập trình</h4>
+                <p>Tối ưu thuật toán Python (như Euclidean) và chế tạo các công cụ tự động hóa thông minh.</p>
+              </div>
+            </article>
+
+            <article class="interest-card glass-card">
+              <div class="interest-visual">
+                <div class="mock-sport" aria-label="Sân cầu lông" role="img"></div>
+              </div>
+              <div class="interest-body">
+                <h4>Thể thao</h4>
+                <p>Đam mê cầu lông — rèn luyện phản xạ sắc bén và duy trì năng lượng bền bỉ.</p>
+              </div>
+            </article>
+
+            <article class="interest-card glass-card">
+              <div class="interest-visual">
+                <div class="mock-food" aria-hidden="true">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+              <div class="interest-body">
+                <h4>Đời sống</h4>
+                <p>Cân bằng nhịp sống với những bữa trưa và tối tự tay vào bếp. Đam mê bất diệt: Gà và thịt rán!</p>
+              </div>
+            </article>
+
+            <article class="interest-card glass-card">
+              <div class="interest-visual">
+                <div class="mock-ielts" aria-hidden="true">
+                  <div class="lines">
+                    <i></i><i></i><i></i>
+                  </div>
+                  <span class="target">✈️</span>
+                </div>
+              </div>
+              <div class="interest-body">
+                <h4>Mục tiêu Du học</h4>
+                <p>Kết hợp nền tảng Điện tử Viễn thông vững chắc cùng khả năng ngoại ngữ nhạy bén để tự tin chinh phục các môi trường giáo dục quốc tế.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="container">
+        <p class="section-label">Portfolio</p>
+        <h2 class="section-title">Các bài tập thành phần</h2>
+        <div class="projects-intro">
+          <p>
+            Sáu bài tập dưới đây thể hiện việc áp dụng lý thuyết vào thực hành, làm nổi bật sản phẩm cuối cùng và quy trình thực hiện các kỹ năng số.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          <article class="project-card glass-card">
+            <div class="project-thumb">
+              <div class="thumb-folder">
+                <div class="laptop-frame">
+                  <div class="laptop-screen">
+                    <div class="tree-line"><span class="icon">📁</span>ThucHanh_MinhHieu/</div>
+                    <div class="tree-line indent"><span class="icon">📁</span>TaiLieu/</div>
+                    <div class="tree-line indent" style="padding-left:24px"><span class="icon">📄</span>GhiChu.txt</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-num">BÀI TẬP 1</span>
+              <h3>Máy tính và thiết bị ngoại vi</h3>
+              <p>Thực hành quản lý không gian lưu trữ: tạo thư mục định danh cá nhân, đổi tên tệp, khôi phục dữ liệu.</p>
+              <div class="project-tags">
+                <span>File Explorer</span>
+                <span>Quản lý dữ liệu</span>
+              </div>
+              <div style="margin-top: auto; padding-top: 1.25rem; border-top: 1px solid rgba(244, 114, 182, 0.1);">
+                <button onclick="openModal('modal-1')" class="btn btn-ghost w-full">🔍 Xem cách tôi làm</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card">
+            <div class="project-thumb">
+              <div class="thumb-pdf">
+                <div class="pdf-doc" aria-hidden="true"></div>
+                <div class="search-ops">
+                  <div>🔍 Tìm kiếm nâng cao</div>
+                  <div style="margin-top:8px;color:#f472b6">"NPN transistor"</div>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-num">BÀI TẬP 2</span>
+              <h3>Khai thác dữ liệu học thuật</h3>
+              <p>Đánh giá tổng hợp 10 nguồn thông tin (IEEE, Google Scholar) về Transistor BJT.</p>
+              <div class="project-tags">
+                <span>IEEE Xplore</span>
+                <span>Scholar</span>
+              </div>
+              <div style="margin-top: auto; padding-top: 1.25rem; border-top: 1px solid rgba(244, 114, 182, 0.1);">
+                <button onclick="openModal('modal-2')" class="btn btn-ghost w-full">🔍 Xem cách tôi làm</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card span-2">
+            <div class="project-thumb">
+              <div class="thumb-ai">
+                <div class="ai-before">
+                  <strong>Prompt ban đầu:</strong><br /><br />"Giải thích Euclidean."
+                </div>
+                <div class="ai-after">
+                  <strong>Prompt Nâng cao (Role-playing):</strong>
+                  <div class="chat-bubble">Đóng vai một giáo sư Khoa học Máy tính. Hãy giải thích bản chất toán học...</div>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-num">BÀI TẬP 3</span>
+              <h3>Kỹ năng viết Prompt học tập</h3>
+              <p>Thử nghiệm kỹ thuật Prompt Engineering qua 3 tác vụ: Giải thuật Euclidean, nguyên lý PNP và ôn tập Giải tích. Ứng dụng Role-playing để tối ưu.</p>
+              <div class="project-tags">
+                <span>Chain-of-thought</span>
+                <span>Role-playing</span>
+              </div>
+              <div style="margin-top: auto; padding-top: 1.25rem; border-top: 1px solid rgba(244, 114, 182, 0.1);">
+                <button onclick="openModal('modal-3')" class="btn btn-ghost w-full">🔍 Xem cách tôi làm</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card">
+            <div class="project-thumb thumb-collab">
+              <div style="height:100%;background:#86198f;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;padding:1rem;text-align:center;width:100%">Google Workspace</div>
+            </div>
+            <div class="project-body">
+              <span class="project-num">BÀI TẬP 4</span>
+              <h3>Hợp tác môi trường số</h3>
+              <p>Tổ chức dự án thiện nguyện ngày Tết bằng Google Workspace (Docs, Sheets, Drive).</p>
+              <div class="project-tags">
+                <span>Teamwork</span>
+                <span>Cloud</span>
+              </div>
+              <div style="margin-top: auto; padding-top: 1.25rem; border-top: 1px solid rgba(244, 114, 182, 0.1);">
+                <button onclick="openModal('modal-4')" class="btn btn-ghost w-full">🔍 Xem cách tôi làm</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card">
+            <div class="project-thumb">
+              <div class="thumb-content">
+                <div class="panel">
+                  <div>💡 Ý tưởng</div>
+                  <div style="margin-top:8px">→ ChatGPT</div>
+                  <div>→ Gemini</div>
+                  <div>→ DALL-E</div>
+                </div>
+                <div class="preview">Canva AI Layout</div>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-num">BÀI TẬP 5</span>
+              <h3>Sáng tạo với AI</h3>
+              <p>Sản xuất Infographic luyện IELTS bằng Dictation phối hợp pipeline 4 công cụ AI.</p>
+              <div class="project-tags">
+                <span>ChatGPT</span>
+                <span>DALL-E 3</span>
+              </div>
+              <div style="margin-top: auto; padding-top: 1.25rem; border-top: 1px solid rgba(244, 114, 182, 0.1);">
+                <button onclick="openModal('modal-5')" class="btn btn-ghost w-full">🔍 Xem cách tôi làm</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card span-2">
+            <div class="project-thumb">
+              <div class="thumb-security">
+                <div class="shield-icon" aria-hidden="true">🛡</div>
+                <div class="verified-stamp">6 NGUYÊN TẮC<br />ĐẠO ĐỨC AI</div>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-num">BÀI TẬP 6</span>
+              <h3>An toàn & Liêm chính học thuật</h3>
+              <p>Phân tích "ảo giác hiểu biết" và thiết lập 6 nguyên tắc cá nhân khi dùng AI: Tác giả chịu trách nhiệm, AI-free zone, Fact-check...</p>
+              <div class="project-tags">
+                <span>AI Governance</span>
+                <span>Integrity</span>
+              </div>
+              <div style="margin-top: auto; padding-top: 1.25rem; border-top: 1px solid rgba(244, 114, 182, 0.1);">
+                <button onclick="openModal('modal-6')" class="btn btn-ghost w-full">🔍 Xem cách tôi làm</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="reflection" id="reflection">
+      <div class="reflection-inner">
+        <div class="reflection-visual">
+          <div class="workspace-mock" aria-hidden="true">
+            <div class="lamp-glow"></div>
+            <div class="desk">
+              <div class="notebook"></div>
+              <div class="monitor">&lt; portfolio-website /&gt;<br />Đang hoàn thiện...</div>
+            </div>
+          </div>
+          <div class="reflection-visual-overlay" aria-hidden="true"></div>
+        </div>
+
+        <div class="reflection-content">
+          <p class="section-label">Tổng kết</p>
+          <h2 class="section-title">Nhìn lại & Đánh giá</h2>
+          <p>
+            Hành trình môn học đã định hình lại tư duy của tôi: từ tổ chức dữ liệu khoa học đến làm chủ Generative AI một cách có đạo đức và hiệu quả.
+          </p>
+
+          <div class="reflection-split">
+            <div class="reflection-col glass-card highlights">
+              <h4>
+                <span class="icon-wrap" aria-hidden="true">💡</span>
+                Điểm tâm đắc & Kỹ năng
+              </h4>
+              <ul>
+                <li>Làm chủ nghệ thuật Prompt Engineering để khai thác tối đa sức mạnh học thuật của AI.</li>
+                <li>Tối ưu hóa quy trình sáng tạo đa công cụ, tiết kiệm triệt để thời gian.</li>
+                <li>Nhận thức sâu sắc ranh giới giữa việc dùng AI để hỗ trợ tư duy và hành vi lạm dụng.</li>
+              </ul>
+            </div>
+
+            <div class="reflection-col glass-card challenges">
+              <h4>
+                <span class="icon-wrap" aria-hidden="true">▲</span>
+                Thách thức đã vượt qua
+              </h4>
+              <ul>
+                <li>Khắc phục hiện tượng AI "bịa" số liệu bằng tư duy phản biện.</li>
+                <li>Chống suy giảm kỹ năng nhờ áp dụng "AI-free zone".</li>
+                <li>Xử lý mượt mà các xung đột khi cộng tác nhóm trên Cloud.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="reflection-future">
+            <p>
+              <strong>Hướng tới tương lai:</strong> Biến AI thành "trợ lý" đắc lực cho các đồ án Điện tử Viễn thông chuyên sâu, tuân thủ 6 nguyên tắc đạo đức và luôn đặt năng lực tư duy cá nhân lên hàng đầu.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 Phạm Đình Minh Hiếu · K70 UET · Portfolio Nhập môn CNS & ƯD TTNT</p>
+      </div>
+    </footer>
+
+    <div id="modal-1" class="modal-overlay">
+      <div class="modal-content glass-card">
+        <button class="modal-close" onclick="closeModal('modal-1')">×</button>
+        <div class="modal-body">
+          <span class="project-num">QUY TRÌNH THỰC HIỆN BÀI 1</span>
+          <h3>Máy tính và thiết bị ngoại vi</h3>
+          <p><strong>Mục tiêu:</strong> Làm chủ các thao tác hệ thống trên File Explorer để xây dựng thói quen lưu trữ dữ liệu khoa học.</p>
+          <ul>
+            <li>Sử dụng tổ hợp phím <code>Windows + E</code> để thao tác nhanh gọn.</li>
+            <li>Xây dựng cấu trúc cây thư mục định danh cá nhân <code>ThucHanh_PhamDinhMinhHieu</code> kết hợp các thư mục con.</li>
+            <li>Luyện tập thành thạo các lệnh xử lý tệp: <code>Ctrl+C</code>, <code>Ctrl+X</code>.</li>
+            <li>Kiểm soát an toàn dữ liệu qua việc khôi phục tệp bị xóa nhầm từ thùng rác (Recycle Bin).</li>
+          </ul>
+          <a href="assets/docs/Bài 1.pdf" target="_blank" class="btn btn-primary" style="margin-top:1rem;">📄 Xem Báo Cáo Gốc (PDF)</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-2" class="modal-overlay">
+      <div class="modal-content glass-card">
+        <button class="modal-close" onclick="closeModal('modal-2')">×</button>
+        <div class="modal-body">
+          <span class="project-num">QUY TRÌNH THỰC HIỆN BÀI 2</span>
+          <h3>Khai thác dữ liệu học thuật</h3>
+          <p><strong>Chủ đề:</strong> Phân tích đặc tính và ứng dụng của Transistor BJT (NPN và PNP) trong mạch vi điện tử.</p>
+          <ul>
+            <li>Dùng toán tử nâng cao trên <strong>Google Scholar</strong> và <strong>ScienceDirect</strong> (ví dụ: AND, OR, "") để giới hạn chính xác phạm vi tài liệu kỹ thuật chuyên sâu.</li>
+            <li>Thu thập và lọc ra 10 nguồn thông tin chất lượng cao, bao gồm cả sách chuyên khảo và các bài báo chuẩn IEEE.</li>
+            <li>Sử dụng khung đánh giá học thuật dựa trên 5 tiêu chí: <i>Tác giả, Cơ quan xuất bản, Phương pháp nghiên cứu, Lượt trích dẫn, Tính cập nhật</i>.</li>
+            <li>Trình bày danh mục tài liệu tham khảo đồng nhất theo chuẩn Harvard.</li>
+          </ul>
+          <a href="assets/docs/Bài 2.pdf" target="_blank" class="btn btn-primary" style="margin-top:1rem;">📄 Xem Báo Cáo Gốc (PDF)</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-3" class="modal-overlay">
+      <div class="modal-content glass-card">
+        <button class="modal-close" onclick="closeModal('modal-3')">×</button>
+        <div class="modal-body">
+          <span class="project-num">QUY TRÌNH THỰC HIỆN BÀI 3</span>
+          <h3>Kỹ năng viết Prompt học tập</h3>
+          <p><strong>Mục tiêu:</strong> Tối ưu hóa câu lệnh (Prompt Engineering) để biến AI thành một gia sư chuyên môn thực thụ.</p>
+          <ul>
+            <li><strong>Lập trình Python:</strong> Yêu cầu AI đóng vai giáo sư Khoa học máy tính để phân tích bản chất toán học đằng sau dòng code trong thuật toán Euclidean.</li>
+            <li><strong>Điện tử Viễn thông:</strong> Áp dụng cấu trúc suy luận từng bước để AI giải thích cặn kẽ nguyên lý của Transistor PNP.</li>
+            <li><strong>Toán cao cấp:</strong> Dùng AI sinh bộ câu hỏi trắc nghiệm Giải tích có kèm lời giải chi tiết và bẫy sai thường gặp.</li>
+          </ul>
+          <p><strong>Kết quả:</strong> Các prompt dùng kỹ thuật Role-playing mang lại kết quả sâu sắc hơn hẳn prompt thông thường.</p>
+          <a href="assets/docs/Bài 3.pdf" target="_blank" class="btn btn-primary" style="margin-top:1rem;">📄 Xem Báo Cáo Gốc (PDF)</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-4" class="modal-overlay">
+      <div class="modal-content glass-card">
+        <button class="modal-close" onclick="closeModal('modal-4')">×</button>
+        <div class="modal-body">
+          <span class="project-num">QUY TRÌNH THỰC HIỆN BÀI 4</span>
+          <h3>Hợp tác trong môi trường số</h3>
+          <p><strong>Bối cảnh:</strong> Phối hợp cùng nhóm xây dựng kế hoạch cho dự án Thiện nguyện ngày Tết trực tuyến 100%.</p>
+          <ul>
+            <li><strong>Google Docs:</strong> Quản lý danh sách tác vụ dạng bảng, theo dõi Deadline và người phụ trách minh bạch.</li>
+            <li><strong>Google Sheets:</strong> Cùng lúc tham gia tính toán dự trù kinh phí, đồ hậu cần sự kiện.</li>
+            <li><strong>Google Drive:</strong> Xây dựng kho lưu trữ minh chứng tập trung.</li>
+            <li><strong>Messenger:</strong> Duy trì liên lạc, báo cáo tiến độ và chốt phương án thuyết trình chéo.</li>
+          </ul>
+          <a href="assets/docs/Bài 4.pdf" target="_blank" class="btn btn-primary" style="margin-top:1rem;">📄 Xem Báo Cáo Gốc (PDF)</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-5" class="modal-overlay">
+      <div class="modal-content glass-card">
+        <button class="modal-close" onclick="closeModal('modal-5')">×</button>
+        <div class="modal-body">
+          <span class="project-num">QUY TRÌNH THỰC HIỆN BÀI 5</span>
+          <h3>Sáng tạo nội dung số với AI</h3>
+          <p><strong>Sản phẩm:</strong> Thiết kế bộ Infographic giới thiệu phương pháp luyện IELTS Listening.</p>
+          <ul>
+            <li><strong>ChatGPT:</strong> Chịu trách nhiệm chắt lọc nội dung, lập khung sườn logic (Outline).</li>
+            <li><strong>Gemini:</strong> Biến thể ngôn ngữ, sáng tạo các dòng tiêu đề (Headline) thu hút mạng xã hội.</li>
+            <li><strong>DALL-E 3:</strong> Chuyển hóa ý tưởng thành ảnh minh họa tốc độ cao.</li>
+            <li><strong>Canva AI & Thủ công:</strong> Lắp ráp bố cục tổng thể, tùy chỉnh dải màu, tinh chỉnh lỗi ảnh và xuất xưởng thành phẩm.</li>
+          </ul>
+          <a href="assets/docs/Bài 5.pdf" target="_blank" class="btn btn-primary" style="margin-top:1rem;">📄 Xem Báo Cáo Gốc (PDF)</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-6" class="modal-overlay">
+      <div class="modal-content glass-card">
+        <button class="modal-close" onclick="closeModal('modal-6')">×</button>
+        <div class="modal-body">
+          <span class="project-num">QUY TRÌNH THỰC HIỆN BÀI 6</span>
+          <h3>An toàn & Liêm chính học thuật</h3>
+          <p><strong>Nghiên cứu:</strong> Phân tích mặt trái của AI Tạo sinh, đặc biệt là rủi ro "Ảo giác hiểu biết".</p>
+          <ul>
+            <li>Tác giả phải là người chịu trách nhiệm cuối cùng.</li>
+            <li>Minh bạch khai báo tỷ lệ sử dụng AI trước khi nộp bài.</li>
+            <li>Luôn kiểm chứng chéo số liệu (Fact-check) để tránh AI "bịa" thông tin.</li>
+            <li>Không dùng AI để sinh trực tiếp luận điểm (tránh bị dẫn dắt tư duy).</li>
+            <li>Bảo mật thông tin cá nhân (Không nạp dữ liệu mật vào prompt).</li>
+            <li>Duy trì "AI-free zone" (Vùng không AI) để tự rèn luyện kỹ năng giải quyết vấn đề bằng não bộ.</li>
+          </ul>
+          <a href="assets/docs/Bài 6.pdf" target="_blank" class="btn btn-primary" style="margin-top:1rem;">📄 Xem Báo Cáo Gốc (PDF)</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
